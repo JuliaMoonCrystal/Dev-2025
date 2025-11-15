@@ -1,0 +1,104 @@
+<script setup></script>
+    <template>
+    <herder class="banner">
+      <div class="apresentacao">
+        <img src="./assets//images//logo.svg" alt="" class="logo">
+
+        <p class="cabecalho-lh frase-cabecalho">
+          <span class="texto-verde">Um catálogo da vida selvagem</span>
+        </p>
+       
+        <p class="subtitulo-lg">
+          Navege pelo catalogo da vida selvagem
+        </p>
+      </div>
+
+      <img src="./assets//images//foto-banner.jpg" alt="foto de um passaro" class="banner" width="1000" height="550">
+    </herder>
+    </template>
+
+<style scoped>
+:root {
+  --ocre: #D1451E;
+  --coral: #F0633C;
+  --coral-claro: #FFDBD1;
+  --creme: #FFFAF3;
+  --verde-escuro: #263A29;
+  --verde-medio: #3D6D4A;
+  --cinza: #444444;
+  --cinza-claro: #EFEFEF;
+  --branco: #FFF;
+
+  --font-family-padrao: Nunito Sans, sans-serif;
+  --cabecalhos: Paytone One, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+button {
+  border: 0;
+  background-color: inherit;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--creme);
+  font-family: var(--font-family-padrao);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  background: url('./imagens/fundo-banner.png'), var(--verde-escuro, #263A29);
+}
+
+.cabecalho-lg {
+  font-family: var(--cabecalhos);
+  font-size: 3.35625em;
+  line-height: 120%; /* 4.0275em */
+}
+
+.cabecalho {
+  font-family: var(--cabecalhos);
+  font-size: 2.75em;
+  line-height: 120%; /* 3.3em */
+}
+
+.subtitulo-lg {
+  font-size: 1.9375em;
+  line-height: 150%; /* 2.90625em */
+}
+
+.paragrafo-lg {
+  font-size: 1.375em;
+  line-height: 150%; /* 2.90625em */
+}
+
+.paragrafo {
+  font-size: 1.125em;
+  line-height: 150%; /* 1.6875em */
+}
+
+@media only screen and (max-width: 767px) {
+  .cabecalho-lg {
+    font-size: 2.75em;
+  }
+
+  .cabecalho {
+    font-size: 2.3125em;
+  }
+
+  .subtitulo-lg {
+    font-size: 1.625em;
+  }
+}
+</style>
